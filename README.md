@@ -21,11 +21,11 @@ I was looking for the API for Google reviews, but I soon found out that the API 
 
 ## Inspecting Data
 
-![df.info](/Pics/Screenshot%202022-08-30%20091042.png)
+<img src="Pics/df_info.png" width="300" style="display: block; margin: 0 auto">
 
 The imported csv file contains all 1722 reviews that were available at this point of time beginning March 2019 until August 2022. It contains different kind of data, most relevant for this project being the actual review data containing review text, and rating, owner answer, likes and timestamps. The there are few nan values for reviews without text and owner answer. After dropping the columns considered irrelevant for this project the dataframe looks as follows.
 
-![df.info dropped](/Pics/Screenshot%202022-08-30%20095514.png)
+<img src="Pics/df_info_dropped.png" width="300" style="display: block; margin: 0 auto">
 
 ## Data Analysis
 
@@ -33,28 +33,29 @@ In this section I formulate questions that I will try to answer using visualizat
 
 What is the distribution of ratings?
 
-![stars](/Pics/stars.jpg)
+<img src="Pics/stars.jpg" width="400" style="display: block; margin: 0 auto">
 
 How many of the reviews have a text?
 
-![text_yn](/Pics/text_yn.jpg)
+<img src="Pics/text_yn.jpg" width="350" style="display: block; margin: 0 auto">
 
 For each review rating group (how many stars), how many reviews have text? The easiest way to manipulate reviews would probably be to by five star reviews without text.
 
 Comment: the highest percentage of answers can be found in 3 and 4 star reviews, so no indication for manipulation here.
-![review_rating_text_yn.jpg](/Pics/review_rating_text_yn.jpg)
+
+<img src="Pics/review_rating_text_yn.jpg" width="400" style="display: block; margin: 0 auto">
 
 For each review rating group (how many stars), how many have been answered by the owner?
 
 Comment: the owner answered proportionally mostly to negative (1 and 2) star reviews.
 
-![review_rating_likes](/Pics/review_rating_answers.jpg)
+<img src="Pics/review_rating_answers.jpg" width="400" style="display: block; margin: 0 auto">
 
 For each review rating group (how many stars), what is the distribution of likes?
 
 Comment: most of the likes have been given to 5 star reviews, but there are some one star reviews with several likes.
 
-![review_rating_likes](/Pics/review_rating_likes.jpg)
+<img src="Pics/review_rating_likes.jpg" width="400" style="display: block; margin: 0 auto">
 
 What is the highest amount of likes given from all the 1 star reviews? Display the text of this review.
 
@@ -72,28 +73,28 @@ For each hour of the day, what is the mean review rating posted?
 
 Comment: the mean rating is distributed more or less evenly for each hour of the day.
 
-![review_rating_hour](Pics/review_rating_hour.jpg)
+<img src="Pics/review_rating_hour.jpg" width="400" style="display: block; margin: 0 auto">
 
 For each hour of the day, how many reviews have been posted on average?
 
 Comment: the average amount of reviews per weekday increases steadily from Monday to Friday, takes a step upwards on Saturday and decreases slightly on Sunday. This is about the expected distribution of restaurant visits according to my experience which suggests that the reviews are posted by clients when they are actually in the restaurant.
 
-![review_rating_hour](Pics/review_weekday.jpg)
+<img src="Pics/review_weekday.jpg" width="400" style="display: block; margin: 0 auto">
 
 For each hour of the day, how many reviews have been posted on average?
 
 Comment: it can be seen that there are 2 peaks in the hourly distribution of reviews at 14 o'clock and at 21 o'clock. Since these are about the expected distribution of restaurant visits according to my experience this is another hint that the reviews are posted by clients when they are actually in the restaurant. This is a significant piece of information since a restaurant owner can take measures to motivate the customers to write reviews by showing reminders inside the restaurant.
 
-![review_hour](Pics/review_hour.jpg)
+<img src="Pics/review_hour.jpg" width="500" style="display: block; margin: 0 auto">
 
 Show the chronological sequence of the review score (rolling mean and cumulated).
 
 Comment: form the graph of the rolling mean it can be seen that the reviews have been rather inconsistent with values ranging from 3.8 and 4.8. It can also be seen that the restaurant had 2 breaks around May 2020 and March 2021. In the graph of cumulative review mean it can be seen that the average rating has been consistently around 4.3, but grew steadily towards 4.4 in the last half a year, which is the most consisted trend from the complete record.
 
-![review_rating_likes](/Pics/time_score.jpg)
+<img src="Pics/time_score.jpg" width="500" style="display: block; margin: 0 auto">
 
 Show the chronological sequence of the mean number of reviews and mean rating per month.
 
 Comment: it can be seen that the mean amount of review per month has been rising slowly from around 30 to around 80 per month except for the ca. 1 year period between the 2 breaks. The mean review rating per month has been consistently around 4.3 (except for the ca. 1 year period between the 2 breaks mentioned above), but has increased to 4.6-4.7 in the last 6 months.
 
-![review_rating_likes](/Pics/rating_mean_month.jpg)
+<img src="Pics/rating_mean_month.jpg" width="500" style="display: block; margin: 0 auto">
