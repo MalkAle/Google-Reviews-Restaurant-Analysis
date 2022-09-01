@@ -80,30 +80,20 @@ Comment: the average amount of reviews per weekday increases steadily from Monda
 
 ![review_rating_hour](Pics/review_weekday.jpg)
 
-For each hour of the day, what is the is the distribution between reviews with and without text?
+For each hour of the day, how many reviews have been posted on average?
 
 Comment: it can be seen that there are 2 peaks in the hourly distribution of reviews at 14 o'clock and at 21 o'clock. Since these are about the expected distribution of restaurant visits according to my experience this is another hint that the reviews are posted by clients when they are actually in the restaurant. This is a significant piece of information since a restaurant owner can take measures to motivate the customers to write reviews by showing reminders inside the restaurant.
 
 ![review_hour](Pics/review_hour.jpg)
 
-the percentage between reviews with vs. without text is distributed more or less evenly between 5 and 21 o'clock.
+Show the chronological sequence of the review score (rolling mean and cumulated).
 
-![review_hour_text_yn](Pics/review_hour_text_yn.jpg)
+Comment: form the graph of the rolling mean it can be seen that the reviews have been rather inconsistent with values ranging from 3.8 and 4.8. It can also be seen that the restaurant had 2 breaks around May 2020 and March 2021. In the graph of cumulative review mean it can be seen that the average rating has been consistently around 4.3, but grew steadily towards 4.4 in the last half a year, which is the most consisted trend from the complete record.
 
-How consistent have the reviews been since the beginning of records?
-
-Comment: a mean of a 25 reviews window is used in the figure. The calculation of the rolling average begins from the beginning of records (older end). It can be seen that the reviews have been rather inconsistent with values ranging from 3.8 and 4.8. It can also be seen that the restaurant had 2 breaks around May 2020 and March 2021.
-
-![review_rating_likes](/Pics/review_rating_rolling.jpg)
-
-Show the chronological sequence of the cumulated review rating (the overall rating at any time in the records respectively).
-
-Comment: it can be seen that the average rating has been consistently around 4.3, but grew steadily towards 4.4 in the last half a year.
-
-![review_rating_likes](/Pics/review_rating_cum.jpg)
+![review_rating_likes](/Pics/time_score.jpg)
 
 Show the chronological sequence of the mean number of reviews and mean rating per month.
 
 Comment: it can be seen that the mean amount of review per month has been rising slowly from around 30 to around 80 per month except for the ca. 1 year period between the 2 breaks. The mean review rating per month has been consistently around 4.3 (except for the ca. 1 year period between the 2 breaks mentioned above), but has increased to 4.6-4.7 in the last 6 months.
 
-![review_rating_likes](/Pics/rating_mean_month)
+![review_rating_likes](/Pics/rating_mean_month.jpg)
